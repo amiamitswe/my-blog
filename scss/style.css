@@ -24,7 +24,6 @@
 /* Colors */
 .container {
   width: 100%;
-  max-width: 100%;
   margin: 0 auto; }
 
 body {
@@ -134,3 +133,5 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
   padding-left: 300px; }
   .home-content .custom-padding {
     padding: 0; }
+
+/*# sourceMappingURL=style.css.map */
