@@ -33,3 +33,13 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// get browser clientHeight
+// alert(document.body.clientHeight);
+document.querySelector(".header").style.height = document.body.clientHeight + "px";
+
+document.addEventListener('DOMContentLoaded', function() {
+  let elems = document.querySelectorAll('.modal');
+  let options = {}
+  let instances = M.Modal.init(elems, options);
+});

@@ -50,7 +50,7 @@ $others-link-color: #6b7072;
 
 body {
   font-family: 'Georgia', Arial, sans-serif;
-  background-color: $white-color;
+  background-color: rgb(180, 183, 184);
   scroll-behavior: smooth;
 
 }
@@ -72,6 +72,8 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
   background-color: $nav-bar-background;
   box-shadow: 0 0 50px #000;
   z-index: 5;
+  position: relative;
+
 
   .logo-box {
     font-family: 'WaltographUI-Bold', Arial, sans-serif;
@@ -183,13 +185,25 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
       list-style: none;
       text-align: right;
       padding: 30px 15px 30px 0;
+
       li {
         display: inline-block;
         padding: 0 3px;
+
         a {
+          overflow: hidden;
+
           img {
             height: 25px;
             width: 25px;
+            border-radius: 10px;
+            transition: all 0.2s;
+          }
+        }
+
+        a:hover {
+          img {
+            transform: scale(1.1);
           }
         }
       }
@@ -212,8 +226,130 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
 
   .custom-padding {
     padding: 0;
+    overflow: hidden;
+    background-color: $hover-color;
+    position: relative;
+
+    img {
+      transform: scale(1.5);
+      opacity: 1;
+      transition: all 0.2s;
+    }
+
+    .cool-app-design-hover-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: all 0.2s;
+
+      .hover-title {
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+        padding-top: 20%;
+        width: inherit;
+        color: $white-color;
+        transition: all 0.2s;
+
+        h3 {
+          font-size: 24px;
+          line-height: 30px;
+        }
+
+        p {
+          font-size: 12px;
+          line-height: 30px;
+          text-transform: uppercase;
+          position: relative;
+        }
+
+         p:after {
+          position: absolute;
+          content: " ";
+          width: 30%;
+           border-bottom: 1px solid $white-color;
+          bottom: 0;
+          left: 110px;
+        }
+
+        .single-link {
+          transition: all 0.2s;
+          padding-top: 10px;
+
+          .material-icons {
+            border: 1px solid $white-color;
+            border-radius: 50%;
+            padding: 20px;
+            color: $white-color;
+          }
+        }
+      }
+    }
   }
 
+
+  .custom-padding:hover {
+
+    img {
+      transform: scale(1.1);
+      opacity: 0.2;
+    }
+
+    .cool-app-design-hover-box {
+      opacity: 1;
+      animation: animatezoom 0.5s;
+
+      .single-link:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    @keyframes animatezoom {
+      from {
+        transform: scale(0)
+      }
+      to {
+        transform: scale(1)
+      }
+    }
+  }
+}
+
+.help-button {
+  position: fixed;
+  height: 90px;
+  width: 90px;
+  top: 0;
+  right: 0;
+  border: 1px solid $hover-color;
+  background-color: $hover-color;
+  z-index: 999;
+
+  .help {
+
+    a {
+      position: absolute;
+      left: 15%;
+      top: 15%;
+      padding: 17px 18px 12px;
+      border: 1px solid $white-color;
+      color: $white-color;
+      border-radius: 50%;
+      transform: scale(1);
+      transition: all 0.2s;
+    }
+  }
+}
+
+.help-button:hover {
+  .help{
+    a {
+      transform: scale(0.9);
+    }
+  }
 
 }
 
