@@ -10,26 +10,26 @@
 
 /* use for logo text*/
 @font-face {
-  font-family: 'WaltographUI-Bold';
-  src: url('../fonts/WaltographUI-Bold/WaltographUI-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/WaltographUI-Bold/WaltographUI-Bold.woff') format('woff'), url('../fonts/WaltographUI-Bold/WaltographUI-Bold.ttf') format('truetype'), url('../fonts/WaltographUI-Bold/WaltographUI-Bold.svg#WaltographUI-Bold') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'WaltographUI-Bold';
+    src: url('../fonts/WaltographUI-Bold/WaltographUI-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/WaltographUI-Bold/WaltographUI-Bold.woff') format('woff'), url('../fonts/WaltographUI-Bold/WaltographUI-Bold.ttf') format('truetype'), url('../fonts/WaltographUI-Bold/WaltographUI-Bold.svg#WaltographUI-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Georgia';
-  src: url('../fonts/georgia_regular/Georgia.eot?#iefix') format('embedded-opentype'), url('../fonts/georgia_regular/Georgia.woff') format('woff'), url('../fonts/georgia_regular/Georgia.ttf') format('truetype'), url('../fonts/georgia_regular/Georgia.svg#Georgia') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Georgia';
+    src: url('../fonts/georgia_regular/Georgia.eot?#iefix') format('embedded-opentype'), url('../fonts/georgia_regular/Georgia.woff') format('woff'), url('../fonts/georgia_regular/Georgia.ttf') format('truetype'), url('../fonts/georgia_regular/Georgia.svg#Georgia') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
 @font-face {
-  font-family: 'MyriadPro-Light';
-  src: url('../fonts/MyriadPro-Light/MyriadPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro-Light/MyriadPro-Light.otf') format('opentype'),
-  url('../fonts/MyriadPro-Light/MyriadPro-Light.woff') format('woff'), url('../fonts/MyriadPro-Light/MyriadPro-Light.ttf') format('truetype'), url('../fonts/MyriadPro-Light/MyriadPro-Light.svg#MyriadPro-Light') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'MyriadPro-Light';
+    src: url('../fonts/MyriadPro-Light/MyriadPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro-Light/MyriadPro-Light.otf') format('opentype'),
+        url('../fonts/MyriadPro-Light/MyriadPro-Light.woff') format('woff'), url('../fonts/MyriadPro-Light/MyriadPro-Light.ttf') format('truetype'), url('../fonts/MyriadPro-Light/MyriadPro-Light.svg#MyriadPro-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -43,313 +43,324 @@ $nav-bar-background: #242b2e;
 $others-link-color: #6b7072;
 
 .container {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 body {
-  font-family: 'Georgia', Arial, sans-serif;
-  background-color: rgb(180, 183, 184);
-  scroll-behavior: smooth;
+    font-family: 'Georgia', Arial, sans-serif;
+    background-color: rgb(180, 183, 184);
+    scroll-behavior: smooth;
 
 }
 
-p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
-  margin: 0;
-  padding: 0;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+ul,
+li,
+section,
+figure {
+    margin: 0;
+    padding: 0;
 }
 
 .row {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 
 .header {
-  float: left;
-  width: 300px;
-  height: 100%;
-  background-color: $nav-bar-background;
-  box-shadow: 0 0 50px #000;
-  z-index: 5;
-  position: relative;
-
-
-  .logo-box {
-    font-family: 'WaltographUI-Bold', Arial, sans-serif;
+    float: left;
+    width: 300px;
+    height: 100%;
+    background-color: $nav-bar-background;
+    box-shadow: 0 0 50px #000;
+    z-index: 5;
     position: relative;
-    padding: 25px 0 28px;
-    text-align: center;
-    background-color: $white-color;
 
-    a {
-      font-size: 40px;
-      text-transform: uppercase;
-      color: $logo-color;
-    }
 
-    span {
-      font-size: 12px;
-      text-transform: uppercase;
-      position: absolute;
-      right: 65px;
-      top: 70px;
-    }
-  }
-
-  .nav-links {
-    ul {
-      list-style: none;
-      border-bottom: 1px solid $block-color;
-
-      li {
-        background-image: linear-gradient(to bottom, #333B3F 0%, #2E363A 100%);
+    .logo-box {
+        font-family: 'WaltographUI-Bold', Arial, sans-serif;
+        position: relative;
+        padding: 25px 0 28px;
+        text-align: center;
+        background-color: $white-color;
 
         a {
-          color: $white-color;
-          width: 100%;
-          display: inline-block;
-          padding: 20px 30px;
-          text-decoration: none;
-          text-transform: uppercase;
-          position: relative;
-          line-height: 20px;
-          text-align: right;
-          background-size: 200% 100%;
-          background-position: right bottom;
-          transition: all .3s ease-out;
+            font-size: 40px;
+            text-transform: uppercase;
+            color: $logo-color;
         }
-      }
 
-      .active-nav-link {
-        background-position: left bottom;
-        background-image: linear-gradient(to right, $hover-color 50%, #2E363A 50%);
-      }
-
-      li:hover {
-
-        a {
-          background-position: left bottom;
-          background-image: linear-gradient(to right, $hover-color 50%, #2E363A 50%);
+        span {
+            font-size: 12px;
+            text-transform: uppercase;
+            position: absolute;
+            right: 65px;
+            top: 70px;
         }
-      }
-    }
-  }
-
-  .other-related-links {
-    text-align: right;
-    color: $white-color;
-    padding: 15px 30px 5px;
-    border-bottom: 1px solid $block-color;
-
-    h3 {
-      font-size: 19px;
-      line-height: 32px;
-      color: $hover-color;
-      padding-right: 25px;
-      position: relative;
-
-      .material-icons {
-        font-size: 20px;
-        position: absolute;
-        right: 0;
-        top: 7px;
-      }
     }
 
-    ul {
-      list-style: none;
-      padding: 10px 0;
+    .nav-links {
+        ul {
+            list-style: none;
+            border-bottom: 1px solid $block-color;
 
-      li {
-        padding: 4px 0;
+            li {
+                background-image: linear-gradient(to bottom, #333B3F 0%, #2E363A 100%);
 
-        a {
-          color: $others-link-color;
-          transition: all 0.2s;
+                a {
+                    color: $white-color;
+                    width: 100%;
+                    display: inline-block;
+                    padding: 20px 30px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    position: relative;
+                    line-height: 20px;
+                    text-align: right;
+                    background-size: 200% 100%;
+                    background-position: right bottom;
+                    transition: all .3s ease-out;
+                }
+            }
+
+            .active-nav-link {
+                background-position: left bottom;
+                background-image: linear-gradient(to right, $hover-color 50%, #2E363A 50%);
+            }
+
+            li:hover {
+
+                a {
+                    background-position: left bottom;
+                    background-image: linear-gradient(to right, $hover-color 50%, #2E363A 50%);
+                }
+            }
         }
-
-        a:hover {
-          color: $white-color;
-        }
-
-        .active-others-link {
-          color: $white-color;
-        }
-      }
     }
-  }
 
-  .social-link-icons {
-    ul {
-      list-style: none;
-      text-align: right;
-      padding: 30px 15px 30px 0;
+    .other-related-links {
+        text-align: right;
+        color: $white-color;
+        padding: 15px 30px 5px;
+        border-bottom: 1px solid $block-color;
 
-      li {
-        display: inline-block;
-        padding: 0 3px;
+        h3 {
+            font-size: 19px;
+            line-height: 32px;
+            color: $hover-color;
+            padding-right: 25px;
+            position: relative;
 
-        a {
-          overflow: hidden;
-
-          img {
-            height: 25px;
-            width: 25px;
-            border-radius: 10px;
-            transition: all 0.2s;
-          }
+            .material-icons {
+                font-size: 20px;
+                position: absolute;
+                right: 0;
+                top: 7px;
+            }
         }
 
-        a:hover {
-          img {
-            transform: scale(1.1);
-          }
+        ul {
+            list-style: none;
+            padding: 10px 0;
+
+            li {
+                padding: 4px 0;
+
+                a {
+                    color: $others-link-color;
+                    transition: all 0.2s;
+                }
+
+                a:hover {
+                    color: $white-color;
+                }
+
+                .active-others-link {
+                    color: $white-color;
+                }
+            }
         }
-      }
     }
-  }
 
-  .copy-right {
-    text-align: right;
-    padding: 0 15px 30px 0;
+    .social-link-icons {
+        ul {
+            list-style: none;
+            text-align: right;
+            padding: 30px 15px 30px 0;
 
-    p {
-      color: $others-link-color;
+            li {
+                display: inline-block;
+                padding: 0 3px;
+
+                a {
+                    overflow: hidden;
+
+                    img {
+                        height: 25px;
+                        width: 25px;
+                        border-radius: 10px;
+                        transition: all 0.2s;
+                    }
+                }
+
+                a:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
     }
-  }
+
+    .copy-right {
+        text-align: right;
+        padding: 0 15px 30px 0;
+
+        p {
+            color: $others-link-color;
+        }
+    }
 }
 
 
 .home-content {
-  padding-left: 300px;
+    padding-left: 300px;
 
-  .custom-padding {
-    padding: 0;
-    overflow: hidden;
-    background-color: $hover-color;
-    position: relative;
+    .custom-padding {
+        padding: 0;
+        overflow: hidden;
+        background-color: $hover-color;
+        position: relative;
 
-    img {
-      transform: scale(1.5);
-      opacity: 1;
-      transition: all 0.2s;
-    }
-
-    .cool-app-design-hover-box {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      transition: all 0.2s;
-
-      .hover-title {
-        text-align: center;
-        vertical-align: middle;
-        display: inline-block;
-        padding-top: 20%;
-        width: inherit;
-        color: $white-color;
-        transition: all 0.2s;
-
-        h3 {
-          font-size: 24px;
-          line-height: 30px;
+        img {
+            transform: scale(1.5);
+            opacity: 1;
+            transition: all 0.2s;
         }
 
-        p {
-          font-size: 12px;
-          line-height: 30px;
-          text-transform: uppercase;
-          position: relative;
+        .cool-app-design-hover-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: all 0.2s;
+
+            .hover-title {
+                text-align: center;
+                vertical-align: middle;
+                display: inline-block;
+                padding-top: 20%;
+                width: inherit;
+                color: $white-color;
+                transition: all 0.2s;
+
+                h3 {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+
+                p {
+                    font-size: 12px;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    position: relative;
+                }
+
+                p:after {
+                    position: absolute;
+                    content: " ";
+                    width: 30%;
+                    border-bottom: 1px solid $white-color;
+                    bottom: 0;
+                    left: 35%;
+                }
+
+                .single-link {
+                    transition: all 0.2s;
+                    padding-top: 10px;
+
+                    .material-icons {
+                        border: 1px solid $white-color;
+                        border-radius: 50%;
+                        padding: 20px;
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .custom-padding:hover {
+
+        img {
+            transform: scale(1.1);
+            opacity: 0.2;
         }
 
-         p:after {
-          position: absolute;
-          content: " ";
-          width: 30%;
-           border-bottom: 1px solid $white-color;
-          bottom: 0;
-          left: 110px;
+        .cool-app-design-hover-box {
+            opacity: 1;
+            animation: animatezoom 0.5s;
+
+            .single-link:hover {
+                transform: scale(1.1);
+            }
         }
 
-        .single-link {
-          transition: all 0.2s;
-          padding-top: 10px;
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
 
-          .material-icons {
-            border: 1px solid $white-color;
-            border-radius: 50%;
-            padding: 20px;
-            color: $white-color;
-          }
+            to {
+                transform: scale(1)
+            }
         }
-      }
     }
-  }
-
-
-  .custom-padding:hover {
-
-    img {
-      transform: scale(1.1);
-      opacity: 0.2;
-    }
-
-    .cool-app-design-hover-box {
-      opacity: 1;
-      animation: animatezoom 0.5s;
-
-      .single-link:hover {
-        transform: scale(1.1);
-      }
-    }
-
-    @keyframes animatezoom {
-      from {
-        transform: scale(0)
-      }
-      to {
-        transform: scale(1)
-      }
-    }
-  }
 }
 
 .help-button {
-  position: fixed;
-  height: 90px;
-  width: 90px;
-  top: 0;
-  right: 0;
-  border: 1px solid $hover-color;
-  background-color: $hover-color;
-  z-index: 999;
+    position: fixed;
+    height: 90px;
+    width: 90px;
+    top: 0;
+    right: 0;
+    border: 1px solid $hover-color;
+    background-color: $hover-color;
+    z-index: 999;
 
-  .help {
+    .help {
 
-    a {
-      position: absolute;
-      left: 15%;
-      top: 15%;
-      padding: 17px 18px 12px;
-      border: 1px solid $white-color;
-      color: $white-color;
-      border-radius: 50%;
-      transform: scale(1);
-      transition: all 0.2s;
+        a {
+            position: absolute;
+            left: 15%;
+            top: 15%;
+            padding: 17px 18px 12px;
+            border: 1px solid $white-color;
+            color: $white-color;
+            border-radius: 50%;
+            transform: scale(1);
+            transition: all 0.2s;
+        }
     }
-  }
 }
 
 .help-button:hover {
-  .help{
-    a {
-      transform: scale(0.9);
+    .help {
+        a {
+            transform: scale(0.9);
+        }
     }
-  }
 
 }
-
