@@ -1,0 +1,46 @@
+@media (max-width: 1000px) {
+  .nav-logo {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+
+    .material-icons {
+      font-size: 40px;
+      color: $nav-bar-background;
+    }
+  }
+  .header {
+    display: none;
+  }
+  .home-content {
+    padding-left: 0;
+  }
+
+  .w3-animate-left {
+    position: relative;
+    -webkit-animation: animateleft 0.4s;
+    animation: animateleft 0.4s
+  }
+  @-webkit-keyframes animateleft {
+    from {
+      left: -300px;
+      opacity: 0
+    }
+    to {
+      left: 0;
+      opacity: 1
+    }
+  }
+  @keyframes animateleft {
+    from {
+      left: -300px;
+      opacity: 0
+    }
+    to {
+      left: 0;
+      opacity: 1
+    }
+  }
+}

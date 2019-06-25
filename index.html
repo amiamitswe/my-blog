@@ -19,6 +19,9 @@
 <body>
 
 <div class="container">
+    <div class="nav-logo">
+        <a onclick="showNav()" href="#"><i class="material-icons">menu</i></a>
+    </div>
     <header class="header">
         <div class="container">
             <figure class="logo-box">
@@ -26,43 +29,45 @@
                 <span>Amit Samadder</span>
             </figure>
 
-            <figure class="nav-links">
-                <ul>
-                    <li><a class="active-nav-link" href="#">Home</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Single Post</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </figure>
+            <figure data-simplebar data-simplebar-auto-hide="true" class="scroll-able-content scroll scroll-width-thin">
+                <figure class="nav-links">
+                    <ul>
+                        <li><a class="active-nav-link" href="#">Home</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Single Post</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </figure>
 
-            <figure class="other-related-links">
-                <h3>Filter <i class="material-icons">dashboard</i></h3>
-                <ul>
-                    <li><a class="active-others-link" href="#">All Works</a></li>
-                    <li><a href="#">web design</a></li>
-                    <li><a href="#">illustration</a></li>
-                    <li><a href="#">photography</a></li>
-                    <li><a href="#">wallpapers</a></li>
-                    <li><a href="#">brochures</a></li>
-                </ul>
-            </figure>
+                <figure class="other-related-links">
+                    <h3>Filter <i class="material-icons">dashboard</i></h3>
+                    <ul>
+                        <li><a class="active-others-link" href="#">All Works</a></li>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">illustration</a></li>
+                        <li><a href="#">photography</a></li>
+                        <li><a href="#">wallpapers</a></li>
+                        <li><a href="#">brochures</a></li>
+                    </ul>
+                </figure>
 
-            <figure class="social-link-icons">
-                <ul>
-                    <li><a href="#"><img class="responsive-img" src="img/flickr.png" alt="flickr"></a></li>
-                    <li><a href="#"><img class="responsive-img" src="img/googleplus.png" alt="googleplus"></a></li>
-                    <li><a href="#"><img class="responsive-img" src="img/twitter.png" alt="twitter"></a></li>
-                    <li><a href="#"><img class="responsive-img" src="img/pinterest.png" alt="pinterest"></a></li>
-                    <li><a href="#"><img class="responsive-img" src="img/dribbble.png" alt="dribbble"></a></li>
-                    <li><a href="#"><img class="responsive-img" src="img/behanc.png" alt="behanc"></a></li>
-                    <li><a href="#"><img class="responsive-img" src="img/facebook.png" alt="facebook"></a></li>
-                </ul>
-            </figure>
+                <figure class="social-link-icons">
+                    <ul>
+                        <li><a href="#"><img class="responsive-img" src="img/flickr.png" alt="flickr"></a></li>
+                        <li><a href="#"><img class="responsive-img" src="img/googleplus.png" alt="googleplus"></a></li>
+                        <li><a href="#"><img class="responsive-img" src="img/twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img class="responsive-img" src="img/pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="#"><img class="responsive-img" src="img/dribbble.png" alt="dribbble"></a></li>
+                        <li><a href="#"><img class="responsive-img" src="img/behanc.png" alt="behanc"></a></li>
+                        <li><a href="#"><img class="responsive-img" src="img/facebook.png" alt="facebook"></a></li>
+                    </ul>
+                </figure>
 
-            <figure class="copy-right">
-                <p>&copy; Copy Right 2019. All Rights Reserved</p>
+                <figure class="copy-right">
+                    <p>&copy; Copy Right 2019. All Rights Reserved</p>
+                </figure>
             </figure>
         </div>
     </header>
@@ -242,25 +247,63 @@
         </div>
     </section>
 
-    <div class="help-button">
-        <div class="help">
-            <a class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons">help_outline</i></a>
-        </div>
-    </div>
+
+    <!--    <div class="help-button">-->
+    <!--        <div class="help">-->
+    <!--            <a class="" onclick="sss()"><i class="material-icons">help_outline</i></a>-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+    <!--    <div class="contact-pop-up-box">-->
+    <!--        <ul class="contact-info">-->
+    <!--            <li><i class="material-icons">call</i>+880-124552-15236</li>-->
+    <!--            <li><i class="material-icons">mail_outline</i><a href="mailto:myblog@gmail.com">myblog@gmail.com</a></li>-->
+    <!--            <li><i class="material-icons">map</i><a href="https://www.google.com/maps" target="_blank">View in MAP</a></li>-->
+    <!--        </ul>-->
+    <!--    </div>-->
+
+    <!-- ************************************************ -->
+
+    <!--    <div class="help-button">-->
+    <!--        <div class="help">-->
+    <!--            <a class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons">help_outline</i></a>-->
+    <!--        </div>-->
+    <!--    </div>-->
 </div>
+
+
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large blue tooltipped" data-tooltip="Help me">
+        <i class="large material-icons">help_outline</i>
+    </a>
+    <ul>
+        <li>
+            <a class="btn-floating red tooltipped" data-tooltip="Call : +880-124552-15236"><i class="material-icons">call</i></a>
+        </li>
+        <li>
+            <a class="btn-floating yellow darken-1 tooltipped" data-tooltip="Email : myblog@gmail.com"
+               href="mailto:myblog@gmail.com"><i class="material-icons">mail_outline</i></a>
+        </li>
+        <li>
+            <a class="btn-floating green tooltipped" data-tooltip="Map : Google Map" href="https://www.google.com/maps"
+               target="_blank"><i class="material-icons">map</i></a>
+        </li>
+    </ul>
+</div>
+
 
 <!--<a class="waves-effect waves-light btn modal-trigger" href="#modal1"><i class="material-icons">help_outline</i></a>-->
 
 <!-- Modal Structure -->
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-    </div>
-</div>
+<!--<div id="modal1" class="modal">-->
+<!--    <div class="modal-content">-->
+<!--        <h4>Modal Header</h4>-->
+<!--        <p>A bunch of text</p>-->
+<!--    </div>-->
+<!--    <div class="modal-footer">-->
+<!--        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
+<!--    </div>-->
+<!--</div>-->
 
 
 <!--<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></button>-->
