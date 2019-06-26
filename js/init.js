@@ -1,3 +1,4 @@
+//------------------ Take me top button -------------------------//
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
     scrollFunction()
@@ -16,42 +17,53 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
-/////////////////////////////////
-// get browser clientHeight
-// alert(document.body.clientHeight);
-// document.querySelector(".header").style.height = document.body.clientHeight + "px";
+//********************************************************************
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    let elems = document.querySelectorAll('.modal');
-    let options = {};
-    let instances = M.Modal.init(elems, options);
-});
-
+//------------------ Mobile nav bar -----------------------------//
 function showNav() {
-    let data = document.querySelector(".header");
+    let header = document.querySelector(".header");
 
-    if (data.style.display === "block") {
-        data.style.display = "none";
-
+    if (header.classList) {
+        header.classList.toggle("nav-bar-logo");
     } else {
-        data.style.display = "block";
+        let classes = data.className.split(" ");
+        let i = classes.indexOf("nav-bar-logo");
+
+        if (i >= 0)
+            classes.splice(i, 1);
+        else
+            classes.push("nav-bar-logo");
+        header.className = classes.join(" ");
     }
 }
+//********************************************************************
 
-/////////////////////////////////
-
+// ---------------- Help me button ------------------------------//
 document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems, {
+    let elems = document.querySelectorAll('.fixed-action-btn');
+    let instances = M.FloatingActionButton.init(elems, {
         direction: 'left',
         hoverEnabled: false
     });
 });
+//********************************************************************
 
+
+// -------------------- tool-tips on help button ------------------//
 document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.tooltipped');
+    let elems = document.querySelectorAll('.tooltipped');
     let options = {position: "top"};
-    var instances = M.Tooltip.init(elems, options);
+    let instances = M.Tooltip.init(elems, options);
 });
+//********************************************************************
+
+
+//***************** js for single work page ************************//
+//--------------------- slider ------------------------------//
+document.addEventListener('DOMContentLoaded', function() {
+    let elems = document.querySelectorAll('.slider');
+    let options = {height: "300px"};
+    let instances = M.Slider.init(elems, options);
+});
+//********************************************************************

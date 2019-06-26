@@ -44,6 +44,9 @@ $nav-link-back-color: #30383c;
 $hover-color: #3ed49a;
 $nav-bar-background: #242b2e;
 $others-link-color: #6b7072;
+$light-blue: #33b8ff;
+$background-color: #b4b7b8;
+$project-detail-p-color: #a3a3a3;
 
 .container {
   width: 100%;
@@ -53,7 +56,7 @@ $others-link-color: #6b7072;
 
 body {
   font-family: 'Georgia', Arial, sans-serif;
-  background-color: rgb(180, 183, 184);
+  background-color: $background-color;
   scroll-behavior: smooth;
 }
 
@@ -66,10 +69,45 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
   margin-bottom: 0;
 }
 
+/* help top button start*/
+.fixed-action-btn {
+  z-index: 5;
+}
+
+/* help button start*/
+
+/* Take me top button start*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 85px;
+  right: 35px;
+  z-index: 5;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: $light-blue;
+  color: $white-color;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: $hover-color;
+}
+
+/* Take me top button end*/
+
+/* nav bar button start*/
 .nav-logo {
   display: none;
 }
 
+/* nav bar button end*/
+
+
+/* header start*/
 .header {
   float: left;
   width: 300px;
@@ -77,7 +115,7 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
   background-color: $nav-bar-background;
   -webkit-box-shadow: 0 0 50px #000;
   box-shadow: 0 0 50px #000;
-  z-index: 5;
+  z-index: 10;
   //position: relative;
   position: fixed;
   overflow-y: scroll;
@@ -110,7 +148,6 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
   }
 
   .scroll-able-content {
-
     position: relative;
     top: 113px;
 
@@ -152,6 +189,7 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
         }
 
         li:hover {
+          cursor: pointer;
 
           a {
             background-position: left bottom;
@@ -255,7 +293,10 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
   }
 }
 
+/* header end*/
 
+
+/* home content start*/
 .home-content {
   padding-left: 300px;
 
@@ -273,6 +314,7 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
       -webkit-transition: all 0.2s;
       -o-transition: all 0.2s;
       transition: all 0.2s;
+      width: 100%;
     }
 
     .cool-app-design-hover-box {
@@ -337,7 +379,6 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
 
 
   .custom-padding:hover {
-
     img {
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -381,84 +422,116 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
   }
 }
 
-.help-button {
-  position: fixed;
-  height: 90px;
-  width: 90px;
-  top: 0;
-  right: 0;
-  border: 1px solid $hover-color;
-  background-color: $hover-color;
-  z-index: 999;
+/* home content end*/
 
-  .help {
 
-    a {
-      position: absolute;
-      left: 15%;
-      top: 15%;
-      padding: 17px 18px 12px;
-      border: 1px solid $white-color;
-      color: $white-color;
-      border-radius: 50%;
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1);
-      -webkit-transition: all 0.2s;
-      -o-transition: all 0.2s;
-      transition: all 0.2s;
-    }
-  }
-}
+/* single-work-content start */
+.single-work-content {
+  padding-left: 300px;
 
-.help-button:hover {
-  .help {
-    a {
-      -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-      transform: scale(0.9);
-      cursor: pointer;
-    }
-  }
-}
+  .single-work {
+    padding: 25px;
 
-.contact-pop-up-box {
-  visibility: hidden;
-  position: fixed;
-  top: 90px;
-  right: 0;
-  border: 1px solid rgba(0, 0, 0, 0.7);
-  background-color: rgba(0, 0, 0, 0.7);
-  color: $white-color;
-  z-index: 999;
+    .work {
+      background-color: $white-color;
 
-  .contact-info {
-    padding: 15px 70px 15px 20px;
-    list-style: none;
+      .single-work-left {
+        border-right: 1px solid $project-detail-p-color;
 
-    li {
-      color: $white-color;
-      font-size: 16px;
-      font-weight: 100;
-      padding: 5px;
-      letter-spacing: 1px;
-      display: block;
+        .single-work-slider {
+          margin: 29px 18px;
 
-      .material-icons {
-        font-size: 20px;
-        vertical-align: middle;
-        padding-right: 10px;
-      }
+          .slider {
+            .indicators {
+              right: 30px;
+              bottom: 20px;
+              z-index: 5;
 
-      a {
-        color: $white-color;
-        -webkit-transition: all 0.2s;
-        -o-transition: all 0.2s;
-        transition: all 0.2s;
-      }
+              .indicator-item {
+                height: 12px;
+                width: 20px;
+                background-color: #b6b6b6;
+                border-radius: 0;
+                border: 1px solid #e1e1e1;
+                margin: 0 0 0 10px;
+              }
 
-      a:hover {
-        color: $hover-color;
+              .indicator-item.active {
+                background-color: $hover-color;
+                border: 1px solid #b6b6b6;
+              }
+            }
+          }
+        }
+
+
+        .project-details {
+          padding: 0 20px;
+          font-family: 'MyriadPro-Light', Arial, sans-serif;
+
+
+          h3 {
+            font-size: 24px;
+            line-height: 26px;
+            margin-bottom: 25px;
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 30px;
+            color: $project-detail-p-color;
+            text-align: justify;
+          }
+
+          p:first-of-type {
+            margin-bottom: 25px;
+          }
+
+          p:last-of-type {
+            border-bottom: 1px solid $project-detail-p-color;
+            padding-bottom: 20px;
+          }
+        }
+
+        .related-works {
+          padding: 0 20px 30px;
+
+          h3 {
+            font-size: 24px;
+            line-height: 26px;
+            margin: 25px 0;
+          }
+
+          .custom-row {
+            margin: 0;
+
+            .custom-padding {
+              padding: 0;
+
+              .hover-title {
+                padding-top: 5%;
+
+                h3 {
+                  font-size: 10px;
+                  margin: 0;
+                  line-height: 20px;
+                }
+
+                p {
+                  font-size: 10px;
+                  line-height: 22px;
+                }
+
+                .single-link {
+
+                  .material-icons {
+                    padding: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

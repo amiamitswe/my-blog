@@ -8326,7 +8326,6 @@ input[type=range]::-ms-thumb {
 .slider .indicators {
   position: absolute;
   text-align: center;
-  left: 0;
   right: 0;
   bottom: 0;
   margin: 0;

@@ -19,9 +19,13 @@
 <body>
 
 <div class="container">
+<!--    mobile nav bar start-->
     <div class="nav-logo">
-        <a onclick="showNav()" href="#"><i class="material-icons">menu</i></a>
+        <a onclick="showNav()"><i class="material-icons">menu</i></a>
     </div>
+    <!--    mobile nav bar end-->
+
+    <!--    section header start-->
     <header class="header">
         <div class="container">
             <figure class="logo-box">
@@ -32,11 +36,11 @@
             <figure data-simplebar data-simplebar-auto-hide="true" class="scroll-able-content scroll scroll-width-thin">
                 <figure class="nav-links">
                     <ul>
-                        <li><a class="active-nav-link" href="#">Home</a></li>
+                        <li><a class="active-nav-link" href="index.html">Home</a></li>
                         <li><a href="#">Work</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Single Post</a></li>
+                        <li><a href="single-work.html">Single Work</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </figure>
@@ -56,11 +60,11 @@
                 <figure class="social-link-icons">
                     <ul>
                         <li><a href="#"><img class="responsive-img" src="img/flickr.png" alt="flickr"></a></li>
-                        <li><a href="#"><img class="responsive-img" src="img/googleplus.png" alt="googleplus"></a></li>
+                        <li><a href="#"><img class="responsive-img" src="img/youtube.jpg" alt="youtube"></a></li>
                         <li><a href="#"><img class="responsive-img" src="img/twitter.png" alt="twitter"></a></li>
                         <li><a href="#"><img class="responsive-img" src="img/pinterest.png" alt="pinterest"></a></li>
                         <li><a href="#"><img class="responsive-img" src="img/dribbble.png" alt="dribbble"></a></li>
-                        <li><a href="#"><img class="responsive-img" src="img/behanc.png" alt="behanc"></a></li>
+                        <li><a href="#"><img class="responsive-img" src="img/github.png" alt="github"></a></li>
                         <li><a href="#"><img class="responsive-img" src="img/facebook.png" alt="facebook"></a></li>
                     </ul>
                 </figure>
@@ -71,8 +75,9 @@
             </figure>
         </div>
     </header>
+<!--    section header end-->
 
-
+<!--section home content start-->
     <section class="home-content">
         <div class="container">
             <div class="row">
@@ -246,32 +251,11 @@
             </div>
         </div>
     </section>
-
-
-    <!--    <div class="help-button">-->
-    <!--        <div class="help">-->
-    <!--            <a class="" onclick="sss()"><i class="material-icons">help_outline</i></a>-->
-    <!--        </div>-->
-    <!--    </div>-->
-
-    <!--    <div class="contact-pop-up-box">-->
-    <!--        <ul class="contact-info">-->
-    <!--            <li><i class="material-icons">call</i>+880-124552-15236</li>-->
-    <!--            <li><i class="material-icons">mail_outline</i><a href="mailto:myblog@gmail.com">myblog@gmail.com</a></li>-->
-    <!--            <li><i class="material-icons">map</i><a href="https://www.google.com/maps" target="_blank">View in MAP</a></li>-->
-    <!--        </ul>-->
-    <!--    </div>-->
-
-    <!-- ************************************************ -->
-
-    <!--    <div class="help-button">-->
-    <!--        <div class="help">-->
-    <!--            <a class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons">help_outline</i></a>-->
-    <!--        </div>-->
-    <!--    </div>-->
+    <!--section home content end-->
 </div>
 
 
+<!--help button start-->
 <div class="fixed-action-btn">
     <a class="btn-floating btn-large blue tooltipped" data-tooltip="Help me">
         <i class="large material-icons">help_outline</i>
@@ -290,23 +274,11 @@
         </li>
     </ul>
 </div>
+<!--help button end-->
 
 
-<!--<a class="waves-effect waves-light btn modal-trigger" href="#modal1"><i class="material-icons">help_outline</i></a>-->
-
-<!-- Modal Structure -->
-<!--<div id="modal1" class="modal">-->
-<!--    <div class="modal-content">-->
-<!--        <h4>Modal Header</h4>-->
-<!--        <p>A bunch of text</p>-->
-<!--    </div>-->
-<!--    <div class="modal-footer">-->
-<!--        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
-<!--    </div>-->
-<!--</div>-->
-
-
-<!--<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></button>-->
+<!--take me top button-->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></button>
 
 <!--  Scripts-->
 <script src="js/materialize.js"></script>

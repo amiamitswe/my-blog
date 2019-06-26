@@ -8,18 +8,27 @@
 
     .material-icons {
       font-size: 40px;
-      color: $nav-bar-background;
+      color: $logo-color;
     }
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+  .nav-logo:hover {
+    cursor: pointer;
   }
   .header {
     display: none;
   }
-  .home-content {
+
+  .home-content,
+  .single-work-content {
     padding-left: 0;
   }
 
-  .w3-animate-left {
-    position: relative;
+  .nav-bar-logo {
+    display: block;
     -webkit-animation: animateleft 0.4s;
     animation: animateleft 0.4s
   }
@@ -43,4 +52,35 @@
       opacity: 1
     }
   }
+
+  .single-work-content .single-work .work .single-work-left {
+    border-right: none;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 850px){
+  .home-content {
+    .custom-padding {
+      .cool-app-design-hover-box {
+        .hover-title {
+          padding-top: 10%;
+
+          h3 {
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 10px;
+          }
+          .single-link {
+            .material-icons {
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
 }
