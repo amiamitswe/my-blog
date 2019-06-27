@@ -42,6 +42,7 @@ $block-color: #000000;
 $logo-color: #364048;
 $nav-link-back-color: #30383c;
 $hover-color: #3ed49a;
+$hover-color-on-hover: #35b886;
 $nav-bar-background: #242b2e;
 $others-link-color: #6b7072;
 $light-blue: #33b8ff;
@@ -295,7 +296,7 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
 
 /* header end*/
 
-
+/********************************************* Home Content **********************************************/
 /* home content start*/
 .home-content {
   padding-left: 300px;
@@ -424,7 +425,7 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
 
 /* home content end*/
 
-
+/********************************************* Single work **********************************************/
 /* single-work-content start */
 .single-work-content {
   padding-left: 300px;
@@ -435,6 +436,7 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
     .work {
       background-color: $white-color;
 
+      /* Left content hare*/
       .single-work-left {
         border-right: 1px solid $project-detail-p-color;
 
@@ -494,7 +496,7 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
         }
 
         .related-works {
-          padding: 0 20px 30px;
+          padding: 0 20px;
 
           h3 {
             font-size: 24px;
@@ -533,6 +535,348 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
           }
         }
       }
+
+      /* Right content hare*/
+      .single-work-right {
+        margin: 29px 20px 29px 0;;
+
+        .project-info {
+          h3 {
+            font-size: 24px;
+            line-height: 26px;
+            margin-bottom: 5px;
+          }
+
+          ul {
+            list-style: none;
+
+            li {
+              display: block;
+              border-bottom: 1px solid $project-detail-p-color;
+              padding: 15px 0;
+
+              .material-icons {
+                color: $hover-color;
+                font-size: 20px;
+                line-height: 43px;
+                border: 1px solid $hover-color;
+                border-radius: 50%;
+                height: 45px;
+                width: 45px;
+                text-align: center;
+                margin-right: 15px;
+                vertical-align: middle;
+              }
+
+              a {
+                color: $project-detail-p-color;
+                font-size: 14px;
+                line-height: 30px;
+                text-transform: capitalize;
+                transition: all 0.2s;
+              }
+
+              a:hover {
+                color: $hover-color;
+              }
+            }
+          }
+        }
+
+        .tags {
+          h3 {
+            font-size: 24px;
+            line-height: 26px;
+            margin: 25px 0 20px;
+          }
+
+          ul {
+            list-style: none;
+
+            li {
+              display: inline-block;
+              padding: 5px 5px 5px 0;;
+
+              a {
+                text-transform: capitalize;
+                font-size: 13px;
+                line-height: 32px;
+                border: 1px solid $project-detail-p-color;
+                color: $project-detail-p-color;
+                padding: 10px 15px;
+                border-radius: 10px;
+                transition: all 0.2s;
+              }
+
+              a:hover {
+                background-color: $hover-color;
+                color: $white-color;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        .project-gallery {
+          h3 {
+            font-size: 24px;
+            line-height: 26px;
+            margin: 25px 0 20px;
+          }
+
+          .gallery {
+
+            .material-placeholder {
+              display: inline-block;
+            }
+
+            img {
+              padding: 1px 4px 0 0;
+              height: 78px;
+              width: 78px;
+            }
+          }
+        }
+
+        .project-features {
+          h3 {
+            font-size: 24px;
+            line-height: 26px;
+            margin: 25px 0 20px;
+          }
+
+          ul {
+            list-style: none;
+
+            li {
+              margin-bottom: 5px;
+
+              .material-icons {
+                color: $project-detail-p-color;
+                font-size: 20px;
+                vertical-align: middle;
+                font-weight: 900;
+                margin-right: 10px;
+                transition: all 0.2s;
+              }
+
+              a {
+                color: $project-detail-p-color;
+                font-size: 14px;
+                line-height: 30px;
+                text-transform: capitalize;
+                transition: all 0.2s;
+              }
+            }
+
+            li:hover {
+              .material-icons {
+                color: $hover-color;
+              }
+
+              a {
+                color: $hover-color;
+              }
+            }
+          }
+        }
+      }
     }
+  }
+}
+
+/********************************************* Single Blog **********************************************/
+
+
+.single-blog-content {
+  .single-blog {
+    .blog {
+      .single-blog-left {
+        .single-blog-comment {
+          padding: 0 20px;
+
+          h3 {
+            font-size: 24px;
+            line-height: 26px;
+            margin: 25px 0 20px;
+          }
+
+          .comment {
+            border-bottom: 1px solid $project-detail-p-color;
+
+            .comment-user {
+              display: flex;
+              margin-bottom: 30px;
+
+              .comment-content {
+                margin-left: 20px;
+
+                .name-active-status {
+                  font-size: 14px;
+                  line-height: 22px;
+                  padding-bottom: 5px;
+                  border-bottom: 1px solid $project-detail-p-color;
+
+                  span {
+                    color: $project-detail-p-color;
+                  }
+                }
+
+                .comment-details {
+                  font-size: 18px;
+                  line-height: 26px;
+                  padding-top: 8px;
+                  color: $project-detail-p-color;
+                  font-family: 'MyriadPro-Light', Arial, sans-serif;
+                }
+              }
+            }
+
+            .user-1 {
+              padding-left: 0;
+              margin-left: 0;
+            }
+
+            .user-2 {
+              padding-left: 78px;
+              position: relative;
+            }
+
+            .user-3 {
+              padding-left: 78px;
+              position: relative;
+            }
+
+            .user-2:before {
+              position: absolute;
+              content: '';
+              width: 40px;
+              height: 40px;
+              top: 0;
+              left: 20px;
+              border-left: 1px solid $project-detail-p-color;
+              border-bottom: 1px solid $project-detail-p-color;
+            }
+
+            .user-3:before {
+              position: absolute;
+              content: '↓';
+              top: -25px;
+              left: 115px;
+            }
+          }
+        }
+
+        .leave-a-comment {
+          padding: 0 20px;
+          margin-bottom: 30px;
+
+          h3 {
+            font-size: 24px;
+            line-height: 26px;
+            margin: 25px 0 20px;
+          }
+
+          .width-full {
+            width: 100%;
+
+            .comment-button {
+              width: inherit;
+              border: none;
+              padding: 20px 0;
+              background-color: $hover-color;
+              color: $white-color;
+              text-transform: uppercase;
+              transition: all 0.2s;
+            }
+
+            .comment-button:hover {
+              cursor: pointer;
+              background-color: $hover-color-on-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/********************************************* Contact page **********************************************/
+
+.contact-with-us {
+  padding-left: 300px;
+
+  .map {
+    opacity: 0.8;
+    transition: all 0.2s;
+    position: relative;
+  }
+
+  .map:hover {
+    opacity: 1;
+  }
+
+  .contact-from-box {
+    border: 10px solid $project-detail-p-color;
+    padding: 20px 35px;
+    background-color: $white-color;
+    position: absolute;
+
+    top: 60px;
+    margin: 0 auto;
+    left: 25%;
+
+    .waves-effect.waves-light.btn.modal-trigger {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .contact-header {
+
+      h3 {
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        color: $project-detail-p-color;
+        font-family: 'MyriadPro-Light', Arial, sans-serif;
+        border-bottom: 1px solid $project-detail-p-color;
+        padding-bottom: 20px;
+      }
+    }
+
+    .contact-input-form {
+      h3 {
+        font-size: 24px;
+        line-height: 26px;
+        margin-top: 25px;
+      }
+
+      .width-full {
+        width: 100%;
+
+        .comment-button {
+          width: inherit;
+          border: none;
+          padding: 20px 0;
+          background-color: $hover-color;
+          color: $white-color;
+          text-transform: uppercase;
+          transition: all 0.2s;
+        }
+
+        .comment-button:hover {
+          cursor: pointer;
+          background-color: $hover-color-on-hover;
+        }
+      }
+    }
+
   }
 }

@@ -67,3 +67,17 @@ document.addEventListener('DOMContentLoaded', function() {
     let instances = M.Slider.init(elems, options);
 });
 //********************************************************************
+
+//--------------------- zoom image ------------------------------//
+document.addEventListener('DOMContentLoaded', function() {
+    let elems = document.querySelectorAll('.materialboxed');
+    let options = {};
+    let instances = M.Materialbox.init(elems, options);
+});
+//********************************************************************
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    let options = {startingTop: "15%"};
+    var instances = M.Modal.init(elems, options);
+});

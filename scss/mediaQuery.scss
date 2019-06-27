@@ -22,8 +22,7 @@
     display: none;
   }
 
-  .home-content,
-  .single-work-content {
+  .home-content {
     padding-left: 0;
   }
 
@@ -53,8 +52,80 @@
     }
   }
 
-  .single-work-content .single-work .work .single-work-left {
-    border-right: none;
+
+  /* single-work-content */
+
+  .single-work-content {
+    padding-left: 0;
+
+    .single-work {
+      .work {
+        .single-work-left {
+          border-right: none;
+
+          .related-works {
+            .custom-row {
+              .custom-padding {
+                .hover-title {
+                  padding-top: 15%;
+                }
+              }
+            }
+          }
+        }
+
+        .single-work-right {
+          margin: 29px 20px;
+        }
+      }
+    }
+  }
+
+  .single-blog-content {
+    .single-blog {
+      .blog {
+        .single-blog-left {
+          .single-blog-comment {
+            .comment {
+              .user-2 {
+                padding-left: 0;
+              }
+
+              .user-3 {
+                padding-left: 0;
+              }
+
+              .user-2::before {
+                content: none;
+              }
+
+              .user-3::before {
+                content: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contact-with-us {
+    padding-left: 0;
+
+    .contact-from-box {
+      border: 10px solid #a3a3a3;
+      padding: 5px 20px;
+      background-color: #ffffff;
+      position: absolute;
+      width: 90%;
+      top: 60px;
+      margin: 0 auto;
+      right: 18px;
+
+      .contact-input-form {
+        padding-bottom: 20px;
+      }
+    }
   }
 }
 

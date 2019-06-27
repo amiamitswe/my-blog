@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>My-Blog &mdash; Single Blog</title>
+
+    <!--    favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+
+    <!-- fonts  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="fonts/fontAwesome/css/all.css" rel="stylesheet">
+
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+<div class="container">
+    <!--    mobile nav bar start-->
+    <div class="nav-logo">
+        <a onclick="showNav()"><i class="material-icons">menu</i></a>
+    </div>
+    <!--    mobile nav bar end-->
+
+    <!--    section header start-->
+    <header class="header">
+        <div class="container">
+            <figure class="logo-box">
+                <a href="index.html">My-Blog</a>
+                <span>Amit Samadder</span>
+            </figure>
+
+            <figure data-simplebar data-simplebar-auto-hide="true" class="scroll-able-content scroll scroll-width-thin">
+                <figure class="nav-links">
+                    <ul>
+                        <li><a class="active-nav-link" href="index.html">Home</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="single-blog.html">Blog</a></li>
+                        <li><a href="single-work.html">Single Work</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </figure>
+
+                <figure class="other-related-links">
+                    <h3>Filter <i class="material-icons">dashboard</i></h3>
+                    <ul>
+                        <li><a class="active-others-link" href="#">All Works</a></li>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">illustration</a></li>
+                        <li><a href="#">photography</a></li>
+                        <li><a href="#">wallpapers</a></li>
+                        <li><a href="#">brochures</a></li>
+                    </ul>
+                </figure>
+
+                <figure class="social-link-icons">
+                    <ul>
+                        <li><a href="#"><img class="responsive-img" src="img/flickr.png" alt="flickr"></a></li>
+                        <li><a href="#"><img class="responsive-img" src="img/youtube.jpg" alt="youtube"></a></li>
+                        <li><a href="#"><img class="responsive-img" src="img/twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img class="responsive-img" src="img/pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="#"><img class="responsive-img" src="img/dribbble.png" alt="dribbble"></a></li>
+                        <li><a href="#"><img class="responsive-img" src="img/github.png" alt="github"></a></li>
+                        <li><a href="#"><img class="responsive-img" src="img/facebook.png" alt="facebook"></a></li>
+                    </ul>
+                </figure>
+
+                <figure class="copy-right">
+                    <p>&copy; Copy Right 2019. All Rights Reserved</p>
+                </figure>
+            </figure>
+        </div>
+    </header>
+    <!--    section header end-->
+
+    <!--section home content start-->
+    <section class="contact-with-us">
+        <div class="container">
+            <figure class="col s12">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.38704061598!2d90.27923763524755!3d23.780573255983164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1561635108208!5m2!1sen!2sbd"
+                            width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+
+
+                    </figure>
+
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+            <!-- Modal Structure -->
+
+                    <div id="modal1"  class="contact-from-box modal">
+                        <div class="contact-header modal-content">
+                            <div class="row">
+                                <h3>Get in touch with us</h3>
+                                <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+                                    sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
+                                    accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                            </div>
+                        </div>
+                        <div class="contact-input-form">
+                            <form class="row">
+                                <h3>Send us a message</h3>
+                                <div class="input-field col m6 s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="icon_prefix" type="text" class="validate">
+                                    <label for="icon_prefix">Name</label>
+                                </div>
+                                <div class="input-field col m6 s12">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="icon_email" type="email" class="validate">
+                                    <label for="icon_email">e-mail</label>
+                                </div>
+                                <div class="input-field col m6 s12">
+                                    <i class="material-icons prefix">link</i>
+                                    <input id="icon_telephone" type="tel" class="validate">
+                                    <label for="icon_telephone">Website</label>
+                                </div>
+                                <div class="input-field col m6 s12">
+                                    <i class="material-icons prefix">textsms</i>
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Message</label>
+                                </div>
+                                <div class="col m12 width-full">
+                                    <input type="submit" value="Post a Comment" class="comment-button">
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                        </div>
+                    </div>
+                </div>
+
+
+    </section>
+    <!--section home content end-->
+</div>
+
+
+<!--help button start-->
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large blue tooltipped" data-tooltip="Help me">
+        <i class="large material-icons">help_outline</i>
+    </a>
+    <ul>
+        <li>
+            <a class="btn-floating red tooltipped" data-tooltip="Call : +880-124552-15236"><i class="material-icons">call</i></a>
+        </li>
+        <li>
+            <a class="btn-floating yellow darken-1 tooltipped" data-tooltip="Email : myblog@gmail.com"
+               href="mailto:myblog@gmail.com"><i class="material-icons">mail_outline</i></a>
+        </li>
+        <li>
+            <a class="btn-floating green tooltipped" data-tooltip="Map : Google Map" href="https://www.google.com/maps"
+               target="_blank"><i class="material-icons">map</i></a>
+        </li>
+    </ul>
+</div>
+<!--help button end-->
+
+
+<!--take me top button-->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></button>
+
+<!--  Scripts-->
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+</html>

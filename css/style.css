@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Custom Stylesheet */
 /**
  * Use this file to override Materialize files so you can update
@@ -199,6 +200,7 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
         color: #6b7072; }
 
 /* header end*/
+/********************************************* Home Content **********************************************/
 /* home content start*/
 .home-content {
   padding-left: 300px; }
@@ -289,13 +291,16 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
     -webkit-transform: scale(1);
     transform: scale(1); } }
 /* home content end*/
+/********************************************* Single work **********************************************/
 /* single-work-content start */
 .single-work-content {
   padding-left: 300px; }
   .single-work-content .single-work {
     padding: 25px; }
     .single-work-content .single-work .work {
-      background-color: #ffffff; }
+      background-color: #ffffff;
+      /* Left content hare*/
+      /* Right content hare*/ }
       .single-work-content .single-work .work .single-work-left {
         border-right: 1px solid #a3a3a3; }
         .single-work-content .single-work .work .single-work-left .single-work-slider {
@@ -332,7 +337,7 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
             border-bottom: 1px solid #a3a3a3;
             padding-bottom: 20px; }
         .single-work-content .single-work .work .single-work-left .related-works {
-          padding: 0 20px 30px; }
+          padding: 0 20px; }
           .single-work-content .single-work .work .single-work-left .related-works h3 {
             font-size: 24px;
             line-height: 26px;
@@ -352,6 +357,215 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
                   line-height: 22px; }
                 .single-work-content .single-work .work .single-work-left .related-works .custom-row .custom-padding .hover-title .single-link .material-icons {
                   padding: 5px; }
+      .single-work-content .single-work .work .single-work-right {
+        margin: 29px 20px 29px 0; }
+        .single-work-content .single-work .work .single-work-right .project-info h3 {
+          font-size: 24px;
+          line-height: 26px;
+          margin-bottom: 5px; }
+        .single-work-content .single-work .work .single-work-right .project-info ul {
+          list-style: none; }
+          .single-work-content .single-work .work .single-work-right .project-info ul li {
+            display: block;
+            border-bottom: 1px solid #a3a3a3;
+            padding: 15px 0; }
+            .single-work-content .single-work .work .single-work-right .project-info ul li .material-icons {
+              color: #3ed49a;
+              font-size: 20px;
+              line-height: 43px;
+              border: 1px solid #3ed49a;
+              border-radius: 50%;
+              height: 45px;
+              width: 45px;
+              text-align: center;
+              margin-right: 15px;
+              vertical-align: middle; }
+            .single-work-content .single-work .work .single-work-right .project-info ul li a {
+              color: #a3a3a3;
+              font-size: 14px;
+              line-height: 30px;
+              text-transform: capitalize;
+              transition: all 0.2s; }
+            .single-work-content .single-work .work .single-work-right .project-info ul li a:hover {
+              color: #3ed49a; }
+        .single-work-content .single-work .work .single-work-right .tags h3 {
+          font-size: 24px;
+          line-height: 26px;
+          margin: 25px 0 20px; }
+        .single-work-content .single-work .work .single-work-right .tags ul {
+          list-style: none; }
+          .single-work-content .single-work .work .single-work-right .tags ul li {
+            display: inline-block;
+            padding: 5px 5px 5px 0; }
+            .single-work-content .single-work .work .single-work-right .tags ul li a {
+              text-transform: capitalize;
+              font-size: 13px;
+              line-height: 32px;
+              border: 1px solid #a3a3a3;
+              color: #a3a3a3;
+              padding: 10px 15px;
+              border-radius: 10px;
+              transition: all 0.2s; }
+            .single-work-content .single-work .work .single-work-right .tags ul li a:hover {
+              background-color: #3ed49a;
+              color: #ffffff;
+              cursor: pointer; }
+        .single-work-content .single-work .work .single-work-right .project-gallery h3 {
+          font-size: 24px;
+          line-height: 26px;
+          margin: 25px 0 20px; }
+        .single-work-content .single-work .work .single-work-right .project-gallery .gallery .material-placeholder {
+          display: inline-block; }
+        .single-work-content .single-work .work .single-work-right .project-gallery .gallery img {
+          padding: 1px 4px 0 0;
+          height: 78px;
+          width: 78px; }
+        .single-work-content .single-work .work .single-work-right .project-features h3 {
+          font-size: 24px;
+          line-height: 26px;
+          margin: 25px 0 20px; }
+        .single-work-content .single-work .work .single-work-right .project-features ul {
+          list-style: none; }
+          .single-work-content .single-work .work .single-work-right .project-features ul li {
+            margin-bottom: 5px; }
+            .single-work-content .single-work .work .single-work-right .project-features ul li .material-icons {
+              color: #a3a3a3;
+              font-size: 20px;
+              vertical-align: middle;
+              font-weight: 900;
+              margin-right: 10px;
+              transition: all 0.2s; }
+            .single-work-content .single-work .work .single-work-right .project-features ul li a {
+              color: #a3a3a3;
+              font-size: 14px;
+              line-height: 30px;
+              text-transform: capitalize;
+              transition: all 0.2s; }
+          .single-work-content .single-work .work .single-work-right .project-features ul li:hover .material-icons {
+            color: #3ed49a; }
+          .single-work-content .single-work .work .single-work-right .project-features ul li:hover a {
+            color: #3ed49a; }
+
+/********************************************* Single Blog **********************************************/
+.single-blog-content .single-blog .blog .single-blog-left .single-blog-comment {
+  padding: 0 20px; }
+  .single-blog-content .single-blog .blog .single-blog-left .single-blog-comment h3 {
+    font-size: 24px;
+    line-height: 26px;
+    margin: 25px 0 20px; }
+  .single-blog-content .single-blog .blog .single-blog-left .single-blog-comment .comment {
+    border-bottom: 1px solid #a3a3a3; }
+    .single-blog-content .single-blog .blog .single-blog-left .single-blog-comment .comment .comment-user {
+      display: flex;
+      margin-bottom: 30px; }
+      .single-blog-content .single-blog .blog .single-blog-left .single-blog-comment .comment .comment-user .comment-content {
+        margin-left: 20px; }
+        .single-blog-content .single-blog .blog .single-blog-left .single-blog-comment .comment .comment-user .comment-content .name-active-status {
+          font-size: 14px;
+          line-height: 22px;
+          padding-bottom: 5px;
+          border-bottom: 1px solid #a3a3a3; }
+          .single-blog-content .single-blog .blog .single-blog-left .single-blog-comment .comment .comment-user .comment-content .name-active-status span {
+            color: #a3a3a3; }
+        .single-blog-content .single-blog .blog .single-blog-left .single-blog-comment .comment .comment-user .comment-content .comment-details {
+          font-size: 18px;
+          line-height: 26px;
+          padding-top: 8px;
+          color: #a3a3a3;
+          font-family: 'MyriadPro-Light', Arial, sans-serif; }
+    .single-blog-content .single-blog .blog .single-blog-left .single-blog-comment .comment .user-1 {
+      padding-left: 0;
+      margin-left: 0; }
+    .single-blog-content .single-blog .blog .single-blog-left .single-blog-comment .comment .user-2 {
+      padding-left: 78px;
+      position: relative; }
+    .single-blog-content .single-blog .blog .single-blog-left .single-blog-comment .comment .user-3 {
+      padding-left: 78px;
+      position: relative; }
+    .single-blog-content .single-blog .blog .single-blog-left .single-blog-comment .comment .user-2:before {
+      position: absolute;
+      content: '';
+      width: 40px;
+      height: 40px;
+      top: 0;
+      left: 20px;
+      border-left: 1px solid #a3a3a3;
+      border-bottom: 1px solid #a3a3a3; }
+    .single-blog-content .single-blog .blog .single-blog-left .single-blog-comment .comment .user-3:before {
+      position: absolute;
+      content: '↓';
+      top: -25px;
+      left: 115px; }
+.single-blog-content .single-blog .blog .single-blog-left .leave-a-comment {
+  padding: 0 20px;
+  margin-bottom: 30px; }
+  .single-blog-content .single-blog .blog .single-blog-left .leave-a-comment h3 {
+    font-size: 24px;
+    line-height: 26px;
+    margin: 25px 0 20px; }
+  .single-blog-content .single-blog .blog .single-blog-left .leave-a-comment .width-full {
+    width: 100%; }
+    .single-blog-content .single-blog .blog .single-blog-left .leave-a-comment .width-full .comment-button {
+      width: inherit;
+      border: none;
+      padding: 20px 0;
+      background-color: #3ed49a;
+      color: #ffffff;
+      text-transform: uppercase;
+      transition: all 0.2s; }
+    .single-blog-content .single-blog .blog .single-blog-left .leave-a-comment .width-full .comment-button:hover {
+      cursor: pointer;
+      background-color: #35b886; }
+
+/********************************************* Contact page **********************************************/
+.contact-with-us {
+  padding-left: 300px; }
+  .contact-with-us .map {
+    opacity: 0.8;
+    transition: all 0.2s;
+    position: relative; }
+  .contact-with-us .map:hover {
+    opacity: 1; }
+  .contact-with-us .contact-from-box {
+    border: 10px solid #a3a3a3;
+    padding: 20px 35px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 60px;
+    margin: 0 auto;
+    left: 25%; }
+    .contact-with-us .contact-from-box .waves-effect.waves-light.btn.modal-trigger {
+      position: absolute;
+      top: 0;
+      right: 0; }
+    .contact-with-us .contact-from-box .contact-header h3 {
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 10px; }
+    .contact-with-us .contact-from-box .contact-header p {
+      font-size: 18px;
+      line-height: 30px;
+      color: #a3a3a3;
+      font-family: 'MyriadPro-Light', Arial, sans-serif;
+      border-bottom: 1px solid #a3a3a3;
+      padding-bottom: 20px; }
+    .contact-with-us .contact-from-box .contact-input-form h3 {
+      font-size: 24px;
+      line-height: 26px;
+      margin-top: 25px; }
+    .contact-with-us .contact-from-box .contact-input-form .width-full {
+      width: 100%; }
+      .contact-with-us .contact-from-box .contact-input-form .width-full .comment-button {
+        width: inherit;
+        border: none;
+        padding: 20px 0;
+        background-color: #3ed49a;
+        color: #ffffff;
+        text-transform: uppercase;
+        transition: all 0.2s; }
+      .contact-with-us .contact-from-box .contact-input-form .width-full .comment-button:hover {
+        cursor: pointer;
+        background-color: #35b886; }
 
 @media (max-width: 1000px) {
   .nav-logo {
@@ -373,8 +587,7 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
   .header {
     display: none; }
 
-  .home-content,
-  .single-work-content {
+  .home-content {
     padding-left: 0; }
 
   .nav-bar-logo {
@@ -396,8 +609,38 @@ p, h1, h2, h3, h4, h5, h6, div, ul, li, section, figure {
     to {
       left: 0;
       opacity: 1; } }
-  .single-work-content .single-work .work .single-work-left {
-    border-right: none; } }
+  /* single-work-content */
+  .single-work-content {
+    padding-left: 0; }
+    .single-work-content .single-work .work .single-work-left {
+      border-right: none; }
+      .single-work-content .single-work .work .single-work-left .related-works .custom-row .custom-padding .hover-title {
+        padding-top: 15%; }
+    .single-work-content .single-work .work .single-work-right {
+      margin: 29px 20px; }
+
+  .single-blog-content .single-blog .blog .single-blog-left .single-blog-comment .comment .user-2 {
+    padding-left: 0; }
+  .single-blog-content .single-blog .blog .single-blog-left .single-blog-comment .comment .user-3 {
+    padding-left: 0; }
+  .single-blog-content .single-blog .blog .single-blog-left .single-blog-comment .comment .user-2::before {
+    content: none; }
+  .single-blog-content .single-blog .blog .single-blog-left .single-blog-comment .comment .user-3::before {
+    content: none; }
+
+  .contact-with-us {
+    padding-left: 0; }
+    .contact-with-us .contact-from-box {
+      border: 10px solid #a3a3a3;
+      padding: 5px 20px;
+      background-color: #ffffff;
+      position: absolute;
+      width: 90%;
+      top: 60px;
+      margin: 0 auto;
+      right: 18px; }
+      .contact-with-us .contact-from-box .contact-input-form {
+        padding-bottom: 20px; } }
 @media (min-width: 601px) and (max-width: 850px) {
   .home-content .custom-padding .cool-app-design-hover-box .hover-title {
     padding-top: 10%; }
