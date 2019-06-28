@@ -23,7 +23,7 @@
   }
 
   .home-content {
-    padding-left: 0;
+    padding: 10px;
   }
 
   .nav-bar-logo {
@@ -120,10 +120,46 @@
       width: 90%;
       top: 60px;
       margin: 0 auto;
-      right: 18px;
+      right: 0;
+      left: 0;
 
       .contact-input-form {
         padding-bottom: 20px;
+      }
+    }
+
+    .waves-effect.waves-light.btn.modal-trigger {
+      right: 0;
+      top: 40%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .about-us-content {
+    .about-box {
+      .about-content {
+        .about-box-left {
+          padding-right: 0;
+
+          .our-staffs {
+            .custom-row {
+              .our-staff-box {
+                img {
+                  height: 180px;
+                }
+              }
+
+              .our-staff-box:hover {
+                .team-hover {
+                  height: 180px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -152,6 +188,4 @@
       }
     }
   }
-
-
 }

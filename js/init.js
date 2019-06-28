@@ -76,8 +76,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 //********************************************************************
 
+
+//***************** js for contact page ************************//
+//--------------------- modal ------------------------------//
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.modal');
-    let options = {startingTop: "15%"};
+    let options = {startingTop: "15%", dismissible: true};
     var instances = M.Modal.init(elems, options);
 });
+//********************************************************************
