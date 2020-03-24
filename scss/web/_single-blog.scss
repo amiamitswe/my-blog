@@ -1,0 +1,160 @@
+/*--------- Single Blog -----------*/
+
+.single-blog-content {
+  .single-blog {
+    .blog {
+      .single-blog-left {
+        .single-blog-comment {
+          padding: 0 20px;
+
+          h3 {
+            font-size: $font-24;
+            line-height: $l-height-26;
+            margin: 25px 0 20px;
+          }
+
+          .comment {
+            border-bottom: 1px solid $project-detail-p-color;
+
+            .comment-user {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              margin-bottom: 30px;
+
+              img {
+                -webkit-box-shadow: 2px 2px $box-shadow-color;
+                box-shadow: 2px 2px $box-shadow-color;
+                border-radius: 3px;
+              }
+
+              .comment-content {
+                margin-left: 20px;
+
+                .name-active-status {
+                  font-size: 14px;
+                  line-height: 22px;
+                  padding-bottom: 5px;
+                  border-bottom: 1px solid $project-detail-p-color;
+
+                  span {
+                    color: $project-detail-p-color;
+                  }
+                }
+
+                .comment-details {
+                  font-size: 18px;
+                  line-height: $l-height-26;
+                  padding-top: 8px;
+                  color: $project-detail-p-color;
+                  font-family: $font-MyriadPro-light;
+                }
+              }
+            }
+
+            .user-1 {
+              padding-left: 0;
+              margin-left: 0;
+            }
+
+            .user-2 {
+              padding-left: 78px;
+              position: relative;
+            }
+
+            .user-3 {
+              padding-left: 78px;
+              position: relative;
+            }
+
+            .user-2:before {
+              position: absolute;
+              content: "";
+              width: 40px;
+              height: 40px;
+              top: 0;
+              left: 20px;
+              border-left: 1px solid $project-detail-p-color;
+              border-bottom: 1px solid $project-detail-p-color;
+            }
+
+            .user-3:before {
+              position: absolute;
+              content: "↓";
+              top: -25px;
+              left: 115px;
+            }
+          }
+        }
+
+        .leave-a-comment {
+          padding: 0 20px;
+          margin-bottom: 30px;
+
+          h3 {
+            font-size: $font-24;
+            line-height: $l-height-26;
+            margin: 25px 0 20px;
+          }
+
+          .width-full {
+            width: 100%;
+
+            .comment-button {
+              width: inherit;
+              border: none;
+              padding: 20px 0;
+              background-color: $hover-color;
+              color: $white-color;
+              text-transform: uppercase;
+              -webkit-box-shadow: 3px 3px $box-shadow-color;
+              box-shadow: 3px 3px $box-shadow-color;
+              -webkit-transition: all 0.2s;
+              -o-transition: all 0.2s;
+              transition: all 0.2s;
+              border-radius: 5px;
+            }
+
+            .comment-button:hover {
+              cursor: pointer;
+              background-color: $hover-color-on-hover;
+              -webkit-box-shadow: none;
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* media queries */
+@media (max-width: 1000px) {
+  .single-blog-content {
+    .single-blog {
+      .blog {
+        .single-blog-left {
+          .single-blog-comment {
+            .comment {
+              .user-2 {
+                padding-left: 0;
+              }
+
+              .user-3 {
+                padding-left: 0;
+              }
+
+              .user-2::before {
+                content: none;
+              }
+
+              .user-3::before {
+                content: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

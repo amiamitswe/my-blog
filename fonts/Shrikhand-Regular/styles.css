@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Shrikhand-Regular';
+  src: url('Shrikhand-Regular.eot?#iefix') format('embedded-opentype'),  url('Shrikhand-Regular.otf')  format('opentype'),
+	     url('Shrikhand-Regular.woff') format('woff'), url('Shrikhand-Regular.ttf')  format('truetype'), url('Shrikhand-Regular.svg#Shrikhand-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

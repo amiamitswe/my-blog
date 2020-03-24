@@ -1,0 +1,168 @@
+/*------------ home content start ---------------*/
+
+.home-content {
+  padding-left: 300px;
+
+  .custom-padding {
+    padding: 0;
+    overflow: hidden;
+    background-color: $hover-color;
+    position: relative;
+
+    img {
+      -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      transform: scale(1.5);
+      opacity: 1;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+      width: 100%;
+    }
+
+    .cool-app-design-hover-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+
+      .hover-title {
+        width: inherit;
+        color: $white-color;
+        -webkit-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        h3 {
+          font-size: $font-24;
+          line-height: 30px;
+        }
+
+        p {
+          font-size: 12px;
+          line-height: 30px;
+          text-transform: uppercase;
+          position: relative;
+        }
+
+        p:after {
+          position: absolute;
+          content: "";
+          width: 50%;
+          border-bottom: 1px solid $white-color;
+          bottom: 0;
+          left: 25%;
+        }
+
+        .single-link {
+          -webkit-transition: all 0.2s;
+          -o-transition: all 0.2s;
+          transition: all 0.2s;
+          padding-top: 10px;
+
+          .material-icons {
+            border: 1px solid $white-color;
+            border-radius: 50%;
+            padding: 20px;
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+
+  .custom-padding:hover {
+    img {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      opacity: 0.2;
+    }
+
+    .cool-app-design-hover-box {
+      opacity: 1;
+      -webkit-animation: animatezoom 0.5s;
+      animation: animatezoom 0.5s;
+
+      .single-link:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+
+    @-webkit-keyframes animatezoom {
+      from {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+      to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+
+    @keyframes animatezoom {
+      from {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+      to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+/* media queries */
+@media (max-width: 1000px) {
+  .home-content {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 850px) {
+  .home-content {
+    .custom-padding {
+      .cool-app-design-hover-box {
+        .hover-title {
+          h3 {
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 10px;
+          }
+
+          .single-link {
+            .material-icons {
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

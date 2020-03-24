@@ -1,0 +1,126 @@
+/*------------- Contact page -------------*/
+
+.contact-with-us {
+  padding-left: 300px;
+
+  .map {
+    opacity: 0.8;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    position: relative;
+
+    .iframe-height {
+      height: 100vh;
+    }
+  }
+
+  .map:hover {
+    opacity: 1;
+  }
+
+  .contact-from-box {
+    border: 10px solid $project-detail-p-color;
+    padding: 20px 35px;
+    background-color: $white-color;
+    position: absolute;
+
+    top: 60px;
+    margin: 0 auto;
+    left: 25%;
+
+    .contact-header {
+      h3 {
+        font-size: $font-24;
+        line-height: $l-height-26;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        color: $project-detail-p-color;
+        font-family: $font-MyriadPro-light;
+        border-bottom: 1px solid $project-detail-p-color;
+        padding-bottom: 20px;
+      }
+    }
+
+    .contact-input-form {
+      padding-bottom: 30px;
+
+      h3 {
+        font-size: $font-24;
+        line-height: $l-height-26;
+        margin-top: 25px;
+      }
+
+      .width-full {
+        width: 100%;
+
+        .comment-button {
+          width: inherit;
+          border: none;
+          padding: 20px 0;
+          background-color: $hover-color;
+          color: $white-color;
+          text-transform: uppercase;
+          -webkit-transition: all 0.2s;
+          -o-transition: all 0.2s;
+          transition: all 0.2s;
+        }
+
+        .comment-button:hover {
+          cursor: pointer;
+          background-color: $hover-color-on-hover;
+        }
+      }
+    }
+  }
+
+  .waves-effect.waves-light.btn.modal-trigger {
+    position: absolute;
+    top: 15%;
+    right: 33%;
+    background-color: $hover-color;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+  .waves-effect.waves-light.btn.modal-trigger:hover {
+    background-color: $hover-color-on-hover;
+  }
+}
+
+/* media queries */
+@media (max-width: 1000px) {
+  .contact-with-us {
+    padding-left: 0;
+
+    .contact-from-box {
+      border: 10px solid $project-detail-p-color;
+      padding: 5px 20px;
+      background-color: $white-color;
+      position: absolute;
+      width: 90%;
+      top: 60px;
+      margin: 0 auto;
+      right: 0;
+      left: 0;
+
+      .contact-input-form {
+        padding-bottom: 20px;
+      }
+    }
+
+    .waves-effect.waves-light.btn.modal-trigger {
+      right: 0;
+      top: 40%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
