@@ -1,289 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>My-Blog &mdash; Single Blog</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>My-Blog &mdash; Single Blog</title>
 
-    <!--    favicon-->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 
-    <!-- fonts  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="fonts/fontAwesome/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="fonts/fontAwesome/css/all.css" rel="stylesheet">
 
-    <!-- CSS  -->
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
+
 <body>
 
-<div class="container">
+  <div class="container">
     <!--    mobile nav bar start-->
     <div class="nav-logo">
-        <a onclick="showNav()"><i class="material-icons">menu</i></a>
+      <a onclick="showNav()"><i class="material-icons">menu</i></a>
     </div>
-    <!--    mobile nav bar end-->
 
     <!--    section header start-->
     <header class="header">
-        <div class="container">
-            <figure class="logo-box">
-                <a href="index.html">My-Blog</a>
-                <span>Amit Samadder</span>
-            </figure>
+      <div class="container">
+        <figure class="logo-box">
+          <a href="index.html">My-Blog</a>
+          <span>Amit Samadder</span>
+        </figure>
 
-            <figure data-simplebar data-simplebar-auto-hide="true" class="scroll-able-content scroll scroll-width-thin">
-                <figure class="nav-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a class="active-nav-link" href="single-blog.html">Blog</a></li>
-                        <li><a href="single-work.html">Single Work</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </figure>
+        <figure data-simplebar data-simplebar-auto-hide="true" class="scroll-able-content scroll scroll-width-thin">
+          <figure class="nav-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a class="active-nav-link" href="single-blog.html">Blog</a></li>
+              <li><a href="single-work.html">Single Work</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </figure>
 
-                <figure class="other-related-links">
-                    <h3>Filter <i class="material-icons">dashboard</i></h3>
-                    <ul>
-                        <li><a class="active-others-link" href="#">All Works</a></li>
-                        <li><a href="#">web design</a></li>
-                        <li><a href="#">illustration</a></li>
-                        <li><a href="#">photography</a></li>
-                        <li><a href="#">wallpapers</a></li>
-                        <li><a href="#">brochures</a></li>
-                    </ul>
-                </figure>
+          <figure class="other-related-links">
+            <h3>Filter <i class="material-icons">dashboard</i></h3>
+            <ul>
+              <li><a class="active-others-link" href="#">All Works</a></li>
+              <li><a href="#">web design</a></li>
+              <li><a href="#">illustration</a></li>
+              <li><a href="#">photography</a></li>
+              <li><a href="#">wallpapers</a></li>
+              <li><a href="#">brochures</a></li>
+            </ul>
+          </figure>
 
-                <figure class="social-link-icons">
-                    <ul>
-                        <li><a href="#"><img class="responsive-img" src="img/flickr.png" alt="flickr"></a></li>
-                        <li><a href="#"><img class="responsive-img" src="img/youtube.jpg" alt="youtube"></a></li>
-                        <li><a href="#"><img class="responsive-img" src="img/twitter.png" alt="twitter"></a></li>
-                        <li><a href="#"><img class="responsive-img" src="img/pinterest.png" alt="pinterest"></a></li>
-                        <li><a href="#"><img class="responsive-img" src="img/dribbble.png" alt="dribbble"></a></li>
-                        <li><a href="#"><img class="responsive-img" src="img/github.png" alt="github"></a></li>
-                        <li><a href="#"><img class="responsive-img" src="img/facebook.png" alt="facebook"></a></li>
-                    </ul>
-                </figure>
+          <figure class="social-link-icons">
+            <ul>
+              <li><a href="#"><img class="responsive-img" src="img/flickr.png" alt="flickr"></a></li>
+              <li><a href="#"><img class="responsive-img" src="img/youtube.jpg" alt="youtube"></a></li>
+              <li><a href="#"><img class="responsive-img" src="img/twitter.png" alt="twitter"></a></li>
+              <li><a href="#"><img class="responsive-img" src="img/pinterest.png" alt="pinterest"></a></li>
+              <li><a href="#"><img class="responsive-img" src="img/dribbble.png" alt="dribbble"></a></li>
+              <li><a href="#"><img class="responsive-img" src="img/github.png" alt="github"></a></li>
+              <li><a href="#"><img class="responsive-img" src="img/facebook.png" alt="facebook"></a></li>
+            </ul>
+          </figure>
 
-                <figure class="copy-right">
-                    <p>&copy; Copy Right 2019. All Rights Reserved</p>
-                </figure>
-            </figure>
-        </div>
+          <figure class="copy-right">
+            <p>&copy; Copy Right 2019. All Rights Reserved</p>
+          </figure>
+        </figure>
+      </div>
     </header>
-    <!--    section header end-->
 
     <!--section home content start-->
     <section class="single-work-content single-blog-content">
-        <div class="single-work single-blog">
-            <div class="work blog">
-                <div class="container">
-                    <div class="row">
-                        <figure class="col s12 m6">
-                            <div class="single-work-left single-blog-left">
-                                <div class="single-work-slider">
-                                    <div class="slider" style="height: 300px;">
-                                        <ul class="slides" style="height: 300px;">
-                                            <li>
-                                                <img class="responsive-img" src="img/single-work-1.jpg" alt="1">
-                                            </li>
-                                            <li>
-                                                <img class="responsive-img" src="img/single-work-3.jpg" alt="3">
-                                            </li>
-                                            <li>
-                                                <img class="responsive-img" src="img/single-work-2.jpg" alt="2">
-                                            </li>
-                                            <li>
-                                                <img class="responsive-img" src="img/single-work-4.jpg" alt="4">
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="project-details">
-                                    <h3>Heavy Sand - Creative Photography</h3>
-                                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec
-                                        sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
-                                        amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor
-                                        a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class
-                                        aptent taciti sociosqu ad litora This is Photoshop's version of Lorem Ipsum.
-                                        Proin gravida nibh vel velit auctor aliquet.</p>
-                                    <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                                        ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
-                                </div>
-                                <div class="single-blog-comment">
-                                    <h3>5 Comments</h3>
-                                    <div class="comment">
-                                        <div class="comment-user user-1">
-                                            <img class="responsive-img" src="img/comment-user-1.png" alt="User-1">
-                                            <div class="comment-content">
-                                                <P class="name-active-status">ShaneFreer <span>/ 58 minutes ago</span>
-                                                </P>
-                                                <p class="comment-details">great post brainartworks</p>
-                                            </div>
-                                        </div>
-                                        <div class="comment-user user-2">
-                                            <img class="responsive-img" src="img/comment-user-2.png" alt="User-1">
-                                            <div class="comment-content">
-                                                <P class="name-active-status">ShaneFreer <span>/ 58 minutes ago</span>
-                                                </P>
-                                                <p class="comment-details">great post brainartworks</p>
-                                            </div>
-                                        </div>
-                                        <div class="comment-user user-3">
-                                            <img class="responsive-img" src="img/comment-user-3.png" alt="User-1">
-                                            <div class="comment-content">
-                                                <P class="name-active-status">ShaneFreer <span>/ 58 minutes ago</span>
-                                                </P>
-                                                <p class="comment-details">great post brainartworks</p>
-                                            </div>
-                                        </div>
-                                        <div class="comment-user user-1">
-                                            <img class="responsive-img" src="img/comment-user-4.png" alt="User-1">
-                                            <div class="comment-content">
-                                                <P class="name-active-status">ShaneFreer <span>/ 58 minutes ago</span>
-                                                </P>
-                                                <p class="comment-details">great post brainartworks</p>
-                                            </div>
-                                        </div>
-                                        <div class="comment-user user-2">
-                                            <img class="responsive-img" src="img/comment-user-1.png" alt="User-1">
-                                            <div class="comment-content">
-                                                <P class="name-active-status">ShaneFreer <span>/ 58 minutes ago</span>
-                                                </P>
-                                                <p class="comment-details">great post brainartworks</p>
-                                            </div>
-                                        </div>
-                                        <div class="comment-user user-3">
-                                            <img class="responsive-img" src="img/comment-user-2.png" alt="User-1">
-                                            <div class="comment-content">
-                                                <P class="name-active-status">ShaneFreer <span>/ 58 minutes ago</span>
-                                                </P>
-                                                <p class="comment-details">great post brainartworks</p>
-                                            </div>
-                                        </div>
-                                        <div class="comment-user user-3">
-                                            <img class="responsive-img" src="img/comment-user-3.png" alt="User-1">
-                                            <div class="comment-content">
-                                                <P class="name-active-status">ShaneFreer <span>/ 58 minutes ago</span>
-                                                </P>
-                                                <p class="comment-details">great post brainartworks</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="leave-a-comment">
-                                    <h3>Leave a Comment</h3>
-
-
-                                    <div class="comment-box">
-                                        <form class="row">
-                                            <div class="input-field col m12">
-                                                <i class="material-icons prefix">account_circle</i>
-                                                <input id="icon_prefix" type="text" class="validate">
-                                                <label for="icon_prefix">Name</label>
-                                            </div>
-                                            <div class="input-field col m12">
-                                                <i class="material-icons prefix">email</i>
-                                                <input id="icon_email" type="email" class="validate">
-                                                <label for="icon_email">e-mail</label>
-                                            </div>
-                                            <div class="input-field col m12">
-                                                <i class="material-icons prefix">link</i>
-                                                <input id="icon_telephone" type="tel" class="validate">
-                                                <label for="icon_telephone">Website</label>
-                                            </div>
-                                            <div class="input-field col m12">
-                                                <i class="material-icons prefix">textsms</i>
-                                                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                                <label for="textarea1">Message</label>
-                                            </div>
-                                            <div class="col m12 width-full">
-                                                <input type="submit" value="Post a Comment" class="comment-button">
-                                            </div>
-                                        </form>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </figure>
-                        <figure class="col s12 m6">
-                            <div class="single-work-right">
-                                <div class="project-info">
-                                    <h3>Post info</h3>
-                                    <ul>
-                                        <li><i class="material-icons">perm_identity</i><a href="#">premiumlayers</a>
-                                        </li>
-                                        <li><i class="material-icons">thumb_up</i><a href="#">138 Likes</a></li>
-                                        <li><i class="material-icons">date_range</i><a href="#">25 December, 2013</a>
-                                        </li>
-                                        <li><i class="material-icons">comment</i><a href="#">7 Comments</a></li>
-                                    </ul>
-                                </div>
-                                <div class="tags">
-                                    <h3>Tags</h3>
-                                    <ul>
-                                        <li><a href="#">web design</a></li>
-                                        <li><a href="#">photography</a></li>
-                                        <li><a href="#">javascript</a></li>
-                                        <li><a href="#">react</a></li>
-                                        <li><a href="#">php</a></li>
-                                        <li><a href="#">angular</a></li>
-                                        <li><a href="#">graphic</a></li>
-                                    </ul>
-                                </div>
-                                <div class="project-features">
-                                    <h3 style="margin-bottom: 10px;">Archives</h3>
-                                    <ul>
-                                        <li><a href="#">December 2013 (24)</a></li>
-                                        <li><a href="#">November 2013 (7)</a></li>
-                                        <li><a href="#">September 2013 (2)</a></li>
-                                        <li><a href="#">March 2013 (22)</a></li>
-                                        <li><a href="#">January 2013 (11)</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </figure>
+      <div class="single-work single-blog">
+        <div class="work blog">
+          <div class="container">
+            <div class="row">
+              <figure class="col s12 m6">
+                <div class="single-work-left single-blog-left">
+                  <div class="single-work-slider">
+                    <div class="slider" style="height: 300px;">
+                      <ul class="slides" style="height: 300px;">
+                        <li>
+                          <img class="responsive-img" src="img/single-work-1.jpg" alt="1">
+                        </li>
+                        <li>
+                          <img class="responsive-img" src="img/single-work-3.jpg" alt="3">
+                        </li>
+                        <li>
+                          <img class="responsive-img" src="img/single-work-2.jpg" alt="2">
+                        </li>
+                        <li>
+                          <img class="responsive-img" src="img/single-work-4.jpg" alt="4">
+                        </li>
+                      </ul>
                     </div>
+                  </div>
+                  <div class="project-details">
+                    <h3>Heavy Sand - Creative Photography</h3>
+                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec
+                      sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
+                      amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor
+                      a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class
+                      aptent taciti sociosqu ad litora This is Photoshop's version of Lorem Ipsum.
+                      Proin gravida nibh vel velit auctor aliquet.</p>
+                    <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+                      ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
+                  </div>
+                  <div class="single-blog-comment">
+                    <h3>5 Comments</h3>
+                    <div class="comment">
+                      <div class="comment-user user-1">
+                        <img class="responsive-img" src="img/comment-user-1.png" alt="User-1">
+                        <div class="comment-content">
+                          <P class="name-active-status">ShaneFreer <span>/ 58 minutes ago</span>
+                          </P>
+                          <p class="comment-details">great post brainartworks</p>
+                        </div>
+                      </div>
+                      <div class="comment-user user-2">
+                        <img class="responsive-img" src="img/comment-user-2.png" alt="User-1">
+                        <div class="comment-content">
+                          <P class="name-active-status">ShaneFreer <span>/ 58 minutes ago</span>
+                          </P>
+                          <p class="comment-details">great post brainartworks</p>
+                        </div>
+                      </div>
+                      <div class="comment-user user-3">
+                        <img class="responsive-img" src="img/comment-user-3.png" alt="User-1">
+                        <div class="comment-content">
+                          <P class="name-active-status">ShaneFreer <span>/ 58 minutes ago</span>
+                          </P>
+                          <p class="comment-details">great post brainartworks</p>
+                        </div>
+                      </div>
+                      <div class="comment-user user-1">
+                        <img class="responsive-img" src="img/comment-user-4.png" alt="User-1">
+                        <div class="comment-content">
+                          <P class="name-active-status">ShaneFreer <span>/ 58 minutes ago</span>
+                          </P>
+                          <p class="comment-details">great post brainartworks</p>
+                        </div>
+                      </div>
+                      <div class="comment-user user-2">
+                        <img class="responsive-img" src="img/comment-user-1.png" alt="User-1">
+                        <div class="comment-content">
+                          <P class="name-active-status">ShaneFreer <span>/ 58 minutes ago</span>
+                          </P>
+                          <p class="comment-details">great post brainartworks</p>
+                        </div>
+                      </div>
+                      <div class="comment-user user-3">
+                        <img class="responsive-img" src="img/comment-user-2.png" alt="User-1">
+                        <div class="comment-content">
+                          <P class="name-active-status">ShaneFreer <span>/ 58 minutes ago</span>
+                          </P>
+                          <p class="comment-details">great post brainartworks</p>
+                        </div>
+                      </div>
+                      <div class="comment-user user-3">
+                        <img class="responsive-img" src="img/comment-user-3.png" alt="User-1">
+                        <div class="comment-content">
+                          <P class="name-active-status">ShaneFreer <span>/ 58 minutes ago</span>
+                          </P>
+                          <p class="comment-details">great post brainartworks</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="leave-a-comment">
+                    <h3>Leave a Comment</h3>
+
+
+                    <div class="comment-box">
+                      <form class="row">
+                        <div class="input-field col m12">
+                          <i class="material-icons prefix">account_circle</i>
+                          <input id="icon_prefix" type="text" class="validate">
+                          <label for="icon_prefix">Name</label>
+                        </div>
+                        <div class="input-field col m12">
+                          <i class="material-icons prefix">email</i>
+                          <input id="icon_email" type="email" class="validate">
+                          <label for="icon_email">e-mail</label>
+                        </div>
+                        <div class="input-field col m12">
+                          <i class="material-icons prefix">link</i>
+                          <input id="icon_telephone" type="tel" class="validate">
+                          <label for="icon_telephone">Website</label>
+                        </div>
+                        <div class="input-field col m12">
+                          <i class="material-icons prefix">textsms</i>
+                          <textarea id="textarea1" class="materialize-textarea"></textarea>
+                          <label for="textarea1">Message</label>
+                        </div>
+                        <div class="col m12 width-full">
+                          <input type="submit" value="Post a Comment" class="comment-button">
+                        </div>
+                      </form>
+                    </div>
+
+                  </div>
                 </div>
+              </figure>
+              <figure class="col s12 m6">
+                <div class="single-work-right">
+                  <div class="project-info">
+                    <h3>Post info</h3>
+                    <ul>
+                      <li><i class="material-icons">perm_identity</i><a href="#">premiumlayers</a>
+                      </li>
+                      <li><i class="material-icons">thumb_up</i><a href="#">138 Likes</a></li>
+                      <li><i class="material-icons">date_range</i><a href="#">25 December, 2013</a>
+                      </li>
+                      <li><i class="material-icons">comment</i><a href="#">7 Comments</a></li>
+                    </ul>
+                  </div>
+                  <div class="tags">
+                    <h3>Tags</h3>
+                    <ul>
+                      <li><a href="#">web design</a></li>
+                      <li><a href="#">photography</a></li>
+                      <li><a href="#">javascript</a></li>
+                      <li><a href="#">react</a></li>
+                      <li><a href="#">php</a></li>
+                      <li><a href="#">angular</a></li>
+                      <li><a href="#">graphic</a></li>
+                    </ul>
+                  </div>
+                  <div class="project-features">
+                    <h3 style="margin-bottom: 10px;">Archives</h3>
+                    <ul>
+                      <li><a href="#">December 2013 (24)</a></li>
+                      <li><a href="#">November 2013 (7)</a></li>
+                      <li><a href="#">September 2013 (2)</a></li>
+                      <li><a href="#">March 2013 (22)</a></li>
+                      <li><a href="#">January 2013 (11)</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </figure>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    <!--section home content end-->
-</div>
+
+  </div>
 
 
-<!--help button start-->
-<div class="fixed-action-btn">
+  <!--help button start-->
+  <div class="fixed-action-btn">
     <a class="btn-floating btn-large blue tooltipped" data-tooltip="Help me">
-        <i class="large material-icons">help_outline</i>
+      <i class="large material-icons">help_outline</i>
     </a>
     <ul>
-        <li>
-            <a class="btn-floating accent-2 tooltipped" data-tooltip="Call : +880-124552-15236"><i class="material-icons">call</i></a>
-        </li>
-        <li>
-            <a class="btn-floating yellow darken-1 tooltipped" data-tooltip="Email : myblog@gmail.com"
-               href="mailto:myblog@gmail.com"><i class="material-icons">mail_outline</i></a>
-        </li>
-        <li>
-            <a class="btn-floating green tooltipped" data-tooltip="Map : Google Map" href="https://www.google.com/maps"
-               target="_blank"><i class="material-icons">map</i></a>
-        </li>
+      <li>
+        <a class="btn-floating accent-2 tooltipped" data-tooltip="Call : +880-124552-15236"><i
+            class="material-icons">call</i></a>
+      </li>
+      <li>
+        <a class="btn-floating yellow darken-1 tooltipped" data-tooltip="Email : myblog@gmail.com"
+          href="mailto:myblog@gmail.com"><i class="material-icons">mail_outline</i></a>
+      </li>
+      <li>
+        <a class="btn-floating green tooltipped" data-tooltip="Map : Google Map" href="https://www.google.com/maps"
+          target="_blank"><i class="material-icons">map</i></a>
+      </li>
     </ul>
-</div>
-<!--help button end-->
+  </div>
 
 
-<!--take me top button-->
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></button>
+  <!--take me top button-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></button>
 
-<!--  Scripts-->
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
+  <!--  Scripts-->
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
 
 </body>
+
 </html>
